@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Staff Leaves</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <h1>Staff Leave Records</h1>
+    <a href="dd.html" id="dash">Back to Dashboard</a>
+
+    <!-- Add Leave Form -->
+    <h2>Add Leave Record</h2>
+    <form id="addLeaveForm">
+        <input type="number" id="leaveStaffID" placeholder="Staff ID" required>
+        Arrival Date:
+        <input type="date" id="arrivalDate" required>
+        Leaving Date:
+        <input type="date" id="leavingDate" required>
+        <input type="text" id="reason" placeholder="Reason" required>
+        <button type="submit">Add Leave</button>
+    </form>
+
+    <!-- Leaves Table -->
+    <table border="1" id="leaveTable">
+        <thead>
+            <tr>
+                <th>Record ID</th>
+                <th>Staff ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Hostel</th>
+                <th>Arrival</th>
+                <th>Leaving</th>
+                <th>Reason</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+
+</html>

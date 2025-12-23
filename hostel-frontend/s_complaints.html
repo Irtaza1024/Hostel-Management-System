@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br>
+    <a href="s.html" id="dash">Back to Dashboard</a>
+
+    <h2>Add Complaint</h2>
+    <form id="addComplaintForm">
+        <input type="number" name="CMSID" placeholder="CMSID" required>
+        <input type="number" name="hosID" placeholder="Hostel ID" required>
+        <input type="date" name="complaintDate" required>
+        <input type="time" name="complaintTime">
+        <textarea name="complaintText" placeholder="Complaint Details" required></textarea>
+        <select name="status">
+            <option value="Pending" selected>Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Resolved">Resolved</option>
+        </select>
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>Search Student Reports</h2>
+    <input type="text" id="studentCMSID" placeholder="Enter CMS ID">
+    <button type="submit" onclick="showStudentComplaints()">Show Reports</button>
+
+    <h3>Complaints</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Complaint ID</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Detail</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="studentComplaintsTable"></tbody>
+    </table>
+
+    <script src="s_script.js"></script>
+</body>
+
+</html>

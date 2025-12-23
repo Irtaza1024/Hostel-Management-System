@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br>
+    <a href="s.html" id="dash">Back to Dashboard</a>
+
+    <h2>Search Student Reports</h2>
+    <input type="text" id="studentCMSID" placeholder="Enter CMS ID">
+    <button type="submit" onclick="showStudentMessRecords()">Show Reports</button>
+
+    <h3>Mess Records</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Record ID</th>
+                <th>Leaving Date</th>
+                <th>Arrival Date</th>
+            </tr>
+        </thead>
+        <tbody id="studentMessRecordsTable"></tbody>
+    </table>
+    <script src="s_script.js"></script>
+</body>
+
+</html>

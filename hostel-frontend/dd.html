@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hostel Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br>
+    <button id="logoutBtn" class="logout-btn">Log out</button>
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>
+        Hostel Management System
+    </h1>
+
+    <nav>
+        <a href="dd_students.html">Students</a>
+        <a href="dd_hostels.html">Hostels</a>
+        <a href="dd_student_reports.html">Student Reports</a>
+        <a href="dd_hostel_reports.html">Hostel Reports</a>
+        <br><br><br>
+        <a href="dd_mess.html">Mess Records</a>
+        <a href="dd_bills.html">Mess Bills</a>
+        <a href="dd_cleaning.html">Cleaning Requests</a>
+        <a href="dd_violations.html">Violations</a>
+        <a href="dd_complaints.html">Complaints</a>
+        <br><br><br>
+        <a href="dd_staff.html">Staff Info</a>
+        <a href="dd_staffLeaves.html">Staff Records</a>
+    </nav>
+    <div id="dashboard">
+        <p>Welcome! Use the menu to manage hostel data.</p>
+    </div>
+    <br><br><br>
+    <div id="copyright">
+        <p>&copy;This Website was created by Irtaza and Taha, Thank you for using it. All rights reserved.</p>
+    </div>
+    <script>
+        document.getElementById("logoutBtn").addEventListener("click", () => {
+            window.location.href = "login.html";
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hostel Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Hostel Reports</h1>
+    <a href="manager.html" id="dash">Back to Dashboard</a>
+
+    <h2>Search Hostel Reports</h2>
+    <input type="text" id="hostelID" placeholder="Enter Hostel ID">
+    <button type="submit" onclick="showHostelReports()">Show Reports</button>
+
+    <h3>Unpaid Mess Bills</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>CMSID</th>
+                <th>Name</th>
+                <th>Room No</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="hostelUnpaidMessTable"></tbody>
+    </table>
+
+    <h3>Pending Cleaning Requests</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Record ID</th>
+                <th>CMSID</th>
+                <th>Name</th>
+                <th>Service Name</th>
+                <th>Request Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="hostelPendingCleaningTable"></tbody>
+    </table>
+
+    <h3>Violations of Hostel</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Violation ID</th>
+                <th>CMSID</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Detail</th>
+                <th>Fine</th>
+            </tr>
+        </thead>
+        <tbody id="hostelViolationsTable"></tbody>
+    </table>
+
+    <h3>Complaints of Hostel</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Complaint ID</th>
+                <th>CMSID</th>
+                <th>Student Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Detail</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="hostelComplaintsTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

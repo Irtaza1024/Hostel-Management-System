@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hostel Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br>
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>
+        Hostel Management System
+    </h1>
+    <nav>
+        <a href="s_messStatus.html">Mess Status</a>
+        <a href="s_messRecords.html">Mess Records</a>
+        <br><br><br>
+        <a href="s_cleaning.html">Cleaning Requests</a>
+        <a href="s_violations.html">Violations</a>
+        <a href="s_complaints.html">Complaints</a>
+        <br><br><br>
+    </nav>
+    <div id="dashboard">
+        <p>Welcome! Use the menu to manage hostel data.</p>
+    </div>
+    <br><br><br>
+    <div id="copyright">
+        <p>&copy;This Website was created by Irtaza and Taha, Thank you for using it. All rights reserved.</p>
+    </div>
+    <script>
+        document.getElementById("logoutBtn").addEventListener("click", () => {
+            window.location.href = "login.html";
+        });
+    </script>
+
+</body>
+
+</html>

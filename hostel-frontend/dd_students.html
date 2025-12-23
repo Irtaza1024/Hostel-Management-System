@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Students</h1>
+    <a href="dd.html" id="dash">Back to Dashboard</a>
+
+    <h2>Add Student</h2>
+    <form id="addStudentForm">
+        <input type="number" name="CMSID" placeholder="CMSID" required>
+        <input type="text" name="studentName" placeholder="Name" required>
+        <input type="text" name="roomNo" placeholder="Room No">
+        <input type="number" name="Semester" placeholder="Semester">
+        <input type="text" name="Major" placeholder="Major">
+        <input type="number" name="hosID" placeholder="Hostel ID">
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>All Students</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>CMSID</th>
+                <th>Name</th>
+                <th>Room No</th>
+                <th>Semester</th>
+                <th>Major</th>
+                <th>Hostel ID</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="studentsTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

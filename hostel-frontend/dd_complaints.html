@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complaints</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Complaints</h1>
+    <a href="dd.html" id="dash">Back to Dashboard</a>
+
+    <h2>Add Complaint</h2>
+    <form id="addComplaintForm">
+        <input type="number" name="CMSID" placeholder="CMSID" required>
+        <input type="number" name="hosID" placeholder="Hostel ID" required>
+        <input type="date" name="complaintDate" required>
+        <input type="time" name="complaintTime">
+        <textarea name="complaintText" placeholder="Complaint Details" required></textarea>
+        <select name="status">
+            <option value="Pending" selected>Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Resolved">Resolved</option>
+        </select>
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>All Complaints</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Complaint ID</th>
+                <th>CMSID</th>
+                <th>Hostel ID</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Details</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="complaintsTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

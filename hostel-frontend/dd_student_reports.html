@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Student Reports</h1>
+    <a href="dd.html" id="dash">Back to Dashboard</a>
+
+    <h2>Search Student Reports</h2>
+    <input type="text" id="studentCMSID" placeholder="Enter CMS ID">
+    <button type="submit" onclick="showStudentReports()">Show Reports</button>
+
+    <h3>Mess Status</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>CMSID</th>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="studentMessStatusTable"></tbody>
+    </table>
+
+    <h3>Violations</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Violation ID</th>
+                <th>Date</th>
+                <th>Detail</th>
+                <th>Fine</th>
+            </tr>
+        </thead>
+        <tbody id="studentViolationsTable"></tbody>
+    </table>
+
+    <h3>Complaints</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Complaint ID</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Detail</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="studentComplaintsTable"></tbody>
+    </table>
+
+    <h3>Roommates</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>CMSID</th>
+                <th>Name</th>
+                <th>Semester</th>
+            </tr>
+        </thead>
+        <tbody id="studentRoommatesTable"></tbody>
+    </table>
+
+    <h3>Students with No Violations</h3>
+    <button type="submit" onclick="fetchNoViolationStudents()">Show All</button>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>CMSID</th>
+                <th>Name</th>
+                <th>Room</th>
+                <th>Semester</th>
+                <th>Major</th>
+            </tr>
+        </thead>
+        <tbody id="noViolationStudentsTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

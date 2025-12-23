@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mess Records</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mess Records</h1>
+    <a href="manager.html" id="dash">Back to Dashboard</a>
+
+    <h2>Add Mess Record</h2>
+    <form id="addMessForm">
+        <input type="number" name="CMSID" placeholder="CMSID" required>
+        <label>Arrival Date:</label>
+        <input type="date" name="ArrivalDate">
+        <label>Leaving Date:</label>
+        <input type="date" name="LeavingDate">
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>All Mess Records</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Record ID</th>
+                <th>CMSID</th>
+                <th>Arrival Date</th>
+                <th>Leaving Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="messTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

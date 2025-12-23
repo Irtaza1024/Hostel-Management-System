@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mess Bills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mess Bills</h1>
+    <a href="manager.html" id="dash">Back to Dashboard</a>
+
+    <h2>Add Mess Bill</h2>
+    <form id="addBillForm">
+        <input type="number" name="CMSID" placeholder="CMSID" required>
+        <input type="number" step="580" name="Amount" placeholder="Amount">
+        <select name="Status">
+            <option value="Paid">Paid</option>
+            <option value="Unpaid" selected>Unpaid</option>
+        </select>
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>All Mess Bills</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Bill ID</th>
+                <th>CMSID</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="billsTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

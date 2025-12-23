@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hostels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hostels</h1>
+    <a href="dd.html" id="dash">Back to Dashboard</a>
+
+    <h2>Add Hostel</h2>
+    <form id="addHostelForm">
+        <input type="text" name="hosID" placeholder="Hostel ID" required>
+        <input type="text" name="hostelName" placeholder="Hostel Name" required>
+        <input type="text" name="managerName" placeholder="Manager Name" required>
+        <input type="text" name="managerContact" placeholder="Manager Contact" required>
+        <button type="submit">Add Hostel</button>
+    </form>
+
+    <h2>Hostel List</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Hostel ID</th>
+                <th>Name</th>
+                <th>Manager Name</th>
+                <th>Manager Contact</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="hostelsTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Staff Members</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <h1>Staff Members</h1>
+    <a href="manager.html" id="dash">Back to Dashboard</a>
+
+    <!-- Add Staff Form -->
+    <h2>Add Staff Member</h2>
+    <form id="addStaffForm">
+        <input type="number" id="staffID" placeholder="Staff ID" required>
+        <input type="text" id="staffName" placeholder="Staff Name" required>
+        <input type="number" id="roleID" placeholder="Role ID" required>
+        <input type="number" id="hosID" placeholder="Hostel ID" required>
+        <button type="submit">Add Staff</button>
+    </form>
+
+    <!-- Staff Table -->
+    <table border="1" id="staffTable">
+        <thead>
+            <tr>
+                <th>Staff ID</th>
+                <th>Name</th>
+                <th>Hostel</th>
+                <th>Role</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+
+</html>

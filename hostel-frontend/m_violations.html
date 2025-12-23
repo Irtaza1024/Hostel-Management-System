@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Violations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Violations</h1>
+    <a href="manager.html" id="dash">Back to Dashboard</a>
+
+    <h2>Add Violation</h2>
+    <form id="addViolationForm">
+        <input type="number" name="CMSID" placeholder="CMSID" required>
+        <textarea name="Detail" placeholder="Violation Detail" required></textarea>
+        <input type="number" step="10" name="Fine" placeholder="Fine">
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>All Violations</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Violation ID</th>
+                <th>CMSID</th>
+                <th>Detail</th>
+                <th>Violation Date</th>
+                <th>Fine</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="violationsTable"></tbody>
+    </table>
+<h3 style = "color: red">You might be wondering why their is a delete button when you need to make sure that all records are kept safe, well that is for a case when a judge's son is involved like Taha himself (insert smiley emoji)</h3>
+    <script src="script.js"></script>
+</body>
+</html>
